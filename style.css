@@ -16,6 +16,10 @@ ul{
 .font-size{
     font-size: 19px;
 }
+.padding-a-gauche{
+    padding-left: 20px;
+}
+
 .color{
     color: white;
 }
