@@ -14,6 +14,14 @@ ul {
 .color {
     color: white;
 }
+.padding-a-gauche{
+    padding-left: 20px;
+}
+.justify-content-align-items-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 /* taille sur les élements de la page */
@@ -71,9 +79,10 @@ ul {
 
 
 .check-validation{
-    color: fff;
+  font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48;
+    color: white;
     margin: auto;
-    font-size: 25px;
+    font-size: 35px !important;
 }
 
 
