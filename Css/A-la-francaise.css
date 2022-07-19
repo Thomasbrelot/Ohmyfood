@@ -14,73 +14,16 @@ ul {
 .color {
     color: white;
 }
-/* affichage du chargement avant d'arriver sur les pages */
-/*
-@keyframes fadeout {
-    1% { opacity: 1; visibility: visible;}
-    60% { opacity:1; visibility: visible;}
-    100% { opacity: 0; visibility: hidden; display: none; }
+.padding-a-gauche{
+    padding-left: 20px;
 }
-@keyframes spin{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
-.page-loading{ 
+.justify-content-align-items-center{
     display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    min-height: 100%;
-    background-color: whitesmoke;
-    z-index: 999;
-    animation-name: fadeout;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+    justify-content: flex-start;
+    align-items: center;
 }
-.loader{
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-}
-.loader-circles{
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #9356DC;
-    animation: spin 1s linear infinite;
-    -webkit-animation: spin 1s linear infinite;
-}
-.loader-circles:after{
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #FF79DA ;
-    opacity: 0.8;
-    -webkit-animation: spin 3s linear infinite;
 
-}
-.loader-circles::before{
-    content: '';
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    border-top-color: #99E2D0;
-    opacity: 0.6;
-    -webkit-animation: spin 2s linear infinite;
 
-}
-*/
 
 /* taille sur les élements de la page */
 .margin-left{
@@ -107,17 +50,24 @@ ul {
 }
 
 /* modification des logos sur la page */
-.fa-regular.fa-heart{
-    font-size: 25px;
+.icone-fleche-gauche{
+    align-items: center;
+    font-size: 25px !important;
+}
+.heart{
+    font-size: 33px !important;
     position: absolute;
 }
-.fa-solid.fa-heart{
-    font-size: 25px;
-    opacity: 0%;
-}
-i.fa-solid.fa-heart:hover {
+.heart-two{
+    font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48;
+    font-size: 33px !important;
     position: relative;
-    transition: 300ms;
+    opacity: 0;
+}
+.heart-two:hover{
+    font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48;
+    position: relative;
+    transition: 400ms;
     cursor: pointer;
     opacity: 100%;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -125,23 +75,14 @@ i.fa-solid.fa-heart:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-i.fa-solid.fa-arrow-left {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
+.check-validation{
+    font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48;
+      color: white;
+      margin: auto;
+      font-size: 35px !important;
 }
-i.fa-solid.fa-circle-check {
-    color: fff;
-    margin: auto;
-    font-size: 25px;
-}
-i.fa-solid.fa-utensils {
-    padding-right: 12px;
-}
-i.fa-solid.fa-handshake-angle {
-    padding-right: 7px;
-    font-size: 15px;
-}
+
+
 /* fin des modifications sur les icones */
 
 
