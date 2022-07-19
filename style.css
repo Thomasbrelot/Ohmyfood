@@ -286,6 +286,9 @@ h4.title-footer {
     flex-direction: column;
     margin: 20px;
 }
+.partenariat{
+    font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 200,'opsz' 48;
+}
 
 /*adaptation sur les différent écran*/
 @media screen  and (min-width:550px) {

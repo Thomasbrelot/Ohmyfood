@@ -14,17 +14,8 @@ ul {
 .color {
     color: white;
 }
-.padding-a-gauche{
-    padding-left: 20px;
-}
-.justify-content-align-items-center{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-
-/* taille sur les élements de la page */
+/*modification sur la taille des élements de la page et le font size */
 .margin-left{
     margin-left: auto;
 }
@@ -36,6 +27,9 @@ ul {
 }
 .padding-top {
     padding-top: 30px;
+}
+.padding-a-gauche{
+    padding-left: 20px;
 }
 .border-bottom {
     border-bottom: 3px solid #99E2D0;
@@ -49,7 +43,6 @@ ul {
 }
 
 /* modification des logos sur la page */
-
 .icone-fleche-gauche{
     align-items: center;
     font-size: 25px !important;
@@ -75,18 +68,14 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-
 .check-validation{
   font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48;
     color: white;
     margin: auto;
     font-size: 35px !important;
 }
-
-
-
+/*fin des modifications des icones sur la page*/
+/*modification en display& justify& align*/
 .display-none {
     display: none;
 }
@@ -99,6 +88,11 @@ ul {
     align-items: center;
     justify-content: space-around;
     margin-right: 55px;
+}
+.justify-content-align-items-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .justify-content-center {
     display: flex;
@@ -213,6 +207,7 @@ input.btn-section1:hover {
     opacity: 0.9;
 }
 
+/* modification du bloc footer*/
 footer {
     background: #0e0e0ed5;
     width: 100%;
@@ -228,7 +223,11 @@ h4.title-footer {
     flex-direction: column;
     margin: 20px;
 }
+.partenariat{
+    font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 200,'opsz' 48;
+}
 
+/*modification sur les tailles des différents écran*/
 @media screen and (min-width: 550px){
     .justify-content-around {
         margin-right: 120px;
@@ -257,7 +256,6 @@ h4.title-footer {
         width: 40%;
     }
 }
-
 @media screen and (min-width:900px) {
     .logo1{
         width: 40%;
@@ -289,7 +287,6 @@ h4.title-footer {
     }
     
 }
-
 @media screen and (min-width:950px) {
     i.fa-solid.fa-arrow-left {
         font-size: 30px;
