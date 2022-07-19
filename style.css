@@ -241,7 +241,7 @@ main {
     height: 300px;
     background-color: white;
     margin-bottom: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .nouveau {
     background-color: #99e2d0;
@@ -284,7 +284,7 @@ h4.title-footer {
 .bloc-footer {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0px 25px 0px 30px;
 }
 .partenariat{
     font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 200,'opsz' 48;
@@ -305,9 +305,15 @@ h4.title-footer {
     .btn-section1{
         width:37%
     }
-    article.article-menu{
-        margin-bottom: 55px;
-        padding-bottom: 65px;
+    .article-menu {
+        position: relative;
+        box-shadow: 0px 6px 5px #ebe9e9;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 300px;
+        background-color: white;
+        margin-bottom: 30px;
+        padding-bottom: 60px;
     }
     .img-menu {
         height: 280px;

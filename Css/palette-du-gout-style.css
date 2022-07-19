@@ -221,7 +221,9 @@ h4.title-footer {
 .bloc-footer {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0px 25px 0px 30px;
+
+
 }
 .partenariat{
     font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 200,'opsz' 48;
