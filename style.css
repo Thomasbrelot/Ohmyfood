@@ -26,6 +26,11 @@ ul{
     display: flex;
     align-items: center;
 }
+.justify-content-align-items-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
     
 /* affichage du chargement avant d'arriver sur les pages */
 @keyframes fadeout {
@@ -101,16 +106,17 @@ ul{
     font-size: 33px !important;
 }
 .heart{
-    font-size: 35px;
+    font-size: 33px !important;
     position: absolute;
 }
 .heart-two{
-    font-size: 35px;
+    font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48;
+    font-size: 33px !important;
     position: relative;
     opacity: 0;
-    font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48"
 }
 .heart-two:hover{
+    font-variation-settings:'FILL' 1,'wght' 700,'GRAD' 200,'opsz' 48;
     position: relative;
     transition: 400ms;
     cursor: pointer;
