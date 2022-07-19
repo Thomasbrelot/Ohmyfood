@@ -1,0 +1,371 @@
+.html,body {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.color {
+    color: white;
+}
+/* affichage du chargement avant d'arriver sur les pages */
+/*
+@keyframes fadeout {
+    1% { opacity: 1; visibility: visible;}
+    60% { opacity:1; visibility: visible;}
+    100% { opacity: 0; visibility: hidden; display: none; }
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.page-loading{ 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: whitesmoke;
+    z-index: 999;
+    animation-name: fadeout;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.loader{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.loader-circles{
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #9356DC;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+.loader-circles:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FF79DA ;
+    opacity: 0.8;
+    -webkit-animation: spin 3s linear infinite;
+
+}
+.loader-circles::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #99E2D0;
+    opacity: 0.6;
+    -webkit-animation: spin 2s linear infinite;
+
+}
+*/
+
+/* taille sur les élements de la page */
+.margin-left{
+    margin-left: auto;
+}
+.margin-bottom {
+    margin-bottom: 15px;
+}
+.padding {
+    padding: 13px;
+}
+.padding-top {
+    padding-top: 30px;
+}
+.border-bottom {
+    border-bottom: 3px solid #99E2D0;
+}
+.font-familly-title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+}
+.font-size-logo {
+    font-size: 25px;
+}
+
+/* modification des logos sur la page */
+.fa-regular.fa-heart{
+    font-size: 25px;
+    position: absolute;
+}
+.fa-solid.fa-heart{
+    font-size: 25px;
+    opacity: 0%;
+}
+i.fa-solid.fa-heart:hover {
+    position: relative;
+    transition: 300ms;
+    cursor: pointer;
+    opacity: 100%;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i.fa-solid.fa-arrow-left {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+i.fa-solid.fa-circle-check {
+    color: fff;
+    margin: auto;
+    font-size: 25px;
+}
+i.fa-solid.fa-utensils {
+    padding-right: 12px;
+}
+i.fa-solid.fa-handshake-angle {
+    padding-right: 7px;
+    font-size: 15px;
+}
+/* fin des modifications sur les icones */
+
+
+.display-none {
+    display: none;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.justify-content-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 55px;
+}
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+.text-ellipsis{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@keyframes slidedown {
+    from {
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+    to {
+        transform:translateY(0);
+        opacity: 1;
+    }    
+}
+.container {
+    margin: 20px;
+    box-shadow: inset 0 -2000px 10px 10px #fff;
+    animation: slidedown 3s;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.background-img {
+    position: absolute;
+    background-image: url(../Maquettes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    width: 100%;
+    height: 270px;
+}
+.logo1 {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+.img-menu {
+    object-position: 50% 60%;
+    object-fit: cover;
+    width: 100%;
+    height: 235px;
+}
+.title-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 55px 40px 25px;
+}
+section {
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: white;
+    margin-top: 215px;
+}
+.custom-card-content {
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px rgb(135, 134, 134);
+    margin: 25px 0px 30px 0px;
+}
+.custom-card-check {
+    width: 0;
+}
+.custom-card-content:hover .custom-card-check {
+    display: flex;
+    background-color: #99E2D0;
+    width: 23%;
+    height: 81px;
+    transition: 800ms;
+}
+.custom-card-content:hover i.fa-solid.fa-circle-check {
+    transition: transform 800ms ease;
+    transform: rotate(360deg);
+}
+.custom-card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+span.sous-titre {
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+.btn-section1 {
+    width: 60%;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 13px;
+    margin: 30px 0px 60px 0px;
+    box-shadow: 0px 4px 5px grey;
+}
+input.btn-section1:hover {
+    box-shadow: 0px 1px 15px grey;
+    opacity: 0.9;
+}
+
+footer {
+    background: #0e0e0ed5;
+    width: 100%;
+    height: 100%;
+}
+h4.title-footer {
+    font-size: 25px;
+    font-family: 'Shrikhand', cursive;
+    color: white;
+}
+.bloc-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+@media screen and (min-width: 550px){
+    .justify-content-around {
+        margin-right: 120px;
+    }
+    .title-menu{
+        justify-content: space-evenly;
+    }
+    .font-familly-title {
+        font-size: 40px;
+    }
+    .fa-regular.fa-heart {
+        font-size: 40px;
+        position: absolute;
+    }
+    .fa-solid.fa-heart {
+        font-size: 40px;
+        opacity: 0;
+    }
+    .background-img{
+        height: 415px;
+    }
+    section{
+        margin-top: 375px;
+    }
+    .btn-section1{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .justify-content-around {
+        margin-right: 175px;
+    }
+    .title-menu {
+        justify-content: space-evenly;
+    }
+    .font-familly-title {
+        font-family: 'Shrikhand', cursive;
+        font-size: 43px;
+    }
+    .fa-regular.fa-heart {
+        font-size: 40px;
+    }
+    .fa-solid.fa-heart {
+        font-size: 40px;
+    }
+    .background-img{
+        height: 475px;
+    }
+    section{
+        margin-top: 425px;
+    }
+    .btn-section1{
+        width: 30%;
+    }
+    
+}
+
+@media screen and (min-width:950px) {
+    i.fa-solid.fa-arrow-left {
+        font-size: 30px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin: 0;
+        width: 100%;
+    }
+    .bloc-cards{
+        width: 30%;
+    }
+    .btn-section1 {
+        width: 25%;
+    }
+    h4.title-footer{
+        font-size: 33px;
+    }
+    ul{
+        font-size: 20px;
+    }
+}
