@@ -19,7 +19,11 @@ ul{
 .color{
     color: white;
 }
-
+.align-items-center{
+    display: flex;
+    align-items: center;
+}
+    
 /* affichage du chargement avant d'arriver sur les pages */
 @keyframes fadeout {
     1% { opacity: 1; visibility: visible;}
