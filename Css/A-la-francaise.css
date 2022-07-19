@@ -14,18 +14,7 @@ ul {
 .color {
     color: white;
 }
-.padding-a-gauche{
-    padding-left: 20px;
-}
-.justify-content-align-items-center{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-
-/* taille sur les élements de la page */
+/*modification des taille sur les élements de la page ainsi que les font-size */
 .margin-left{
     margin-left: auto;
 }
@@ -37,6 +26,9 @@ ul {
 }
 .padding-top {
     padding-top: 30px;
+}
+.padding-a-gauche{
+    padding-left: 20px;
 }
 .border-bottom {
     border-bottom: 3px solid #99E2D0;
@@ -81,8 +73,6 @@ ul {
       margin: auto;
       font-size: 35px !important;
 }
-
-
 /* fin des modifications sur les icones */
 
 
@@ -102,6 +92,11 @@ ul {
 .justify-content-center {
     display: flex;
     justify-content: center;
+}
+.justify-content-align-items-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .text-ellipsis{
     font-size: 14px;
@@ -212,6 +207,7 @@ input.btn-section1:hover {
     opacity: 0.9;
 }
 
+/*modification du bloc footer*/
 footer {
     background: #0e0e0ed5;
     width: 100%;
@@ -227,7 +223,11 @@ h4.title-footer {
     flex-direction: column;
     margin: 20px;
 }
+.partenariat{
+    font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 200,'opsz' 48;
+}
 
+/*modification sur les differents écran*/
 @media screen and (min-width: 550px){
     .justify-content-around {
         margin-right: 120px;
@@ -256,7 +256,6 @@ h4.title-footer {
         width: 40%;
     }
 }
-
 @media screen and (min-width:900px) {
     .justify-content-around {
         margin-right: 175px;
@@ -285,7 +284,6 @@ h4.title-footer {
     }
     
 }
-
 @media screen and (min-width:950px) {
     i.fa-solid.fa-arrow-left {
         font-size: 30px;
@@ -310,4 +308,3 @@ h4.title-footer {
         font-size: 20px;
     }
 }
-
